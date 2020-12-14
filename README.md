@@ -11,4 +11,6 @@ Learning Data Structures from Scratch #100DaysOfDSA
 7. Day-7 [Blog](https://prakhar-mishra.medium.com/my-journey-to-learning-data-structures-from-scratch-deque-2b6f2667858e)
 8. Day-8 [Blog](https://prakhar-mishra.medium.com/my-journey-to-learning-data-structures-from-scratch-deque-5fa1a03e89bd)
 9. Day-9 [Blog](https://prakhar-mishra.medium.com/my-journey-to-learning-data-structures-from-scratch-deque-8c8572cd4a20)
+10. Day-10 [Blog](https://prakhar-mishra.medium.com/my-journey-to-learning-data-structures-from-scratch-tree-36d15cc0f188)
+11. Day-11 [Blog](https://prakhar-mishra.medium.com/my-journey-to-learning-data-structures-from-scratch-tree-680e922a305e)
 
