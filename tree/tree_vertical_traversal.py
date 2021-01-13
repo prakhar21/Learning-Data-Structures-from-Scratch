@@ -31,4 +31,4 @@ coll = {}
 hd = 0
 vertical_traversal(root, hd, coll)
 for k,v in coll.items():
-    print (k, v[0])
+    print (k, v)
