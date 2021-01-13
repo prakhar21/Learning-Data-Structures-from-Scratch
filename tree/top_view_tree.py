@@ -7,7 +7,7 @@ class Node:
         self.right = None
 
 
-def vertical_traversal(root, hd, q):
+def top_view(root, hd, q):
     if root == None: return q
     
     if hd in q:
