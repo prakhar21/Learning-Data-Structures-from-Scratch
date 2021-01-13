@@ -15,8 +15,8 @@ def top_view(root, hd, q):
     else:
         q[hd] = [root.data]
     
-    vertical_traversal(root.left, hd-1, q)
-    vertical_traversal(root.right, hd+1, q)
+    top_view(root.left, hd-1, q)
+    top_view(root.right, hd+1, q)
         
 root = Node('a')
 root.left = Node('b')
