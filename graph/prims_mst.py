@@ -1,17 +1,23 @@
 def prims_mst(graph, start_node):
-    visited = [start_node]
-    while len(visited) != len(graph[0]):
-        start = graph[start_node]
+    nodes_order=[]
+    visited = [False]*len(graph[0])
+    visited[start_node] = True
+    nodes_order.append(start_node)
+    while len(nodes_order) != len(graph[0]):
         minimum = 100000
-        minimum_idx = -1
-        for idx, val in enumerate(start):
-            if minimum >= val and idx!=start_node and val!=0 and idx not in visited:
-                minimum = val
-                minimum_idx = idx
+        x, y = None, None
+        for start in range(len(graph[0])):
+            if visited[start]:
+                for end in range(len(graph[0])):
+                    if start!=end and graph[start][end]!=0 and visited[end]==False:
+                        if minimum >= graph[start][end]:
+                            minimum = graph[start][end]
+                            x=start
+                            y = end
         
-        start_node = minimum_idx
-        visited.append(minimum_idx)
-    return visited
+        print (x, y)
+        visited[y]=True
+        nodes_order.append(y)
 
 graph = [[0, 9, 75, 0, 0],
      [9, 0, 95, 19, 42],
@@ -20,4 +26,4 @@ graph = [[0, 9, 75, 0, 0],
      [0, 42, 66, 31, 0]]
 
 start_node=0
-print (prims_mst(graph, start_node))
+prims_mst(graph, start_node)
